@@ -115,7 +115,7 @@ func main() {
 	// run the producer in the background
 	go pizzeria(pizzaJob)
 
-	// create and run customer
+	// create and run consumer
 	for i := range pizzaJob.data {
 		if i.pizzaNumber <= numberOfPizzas {
 			if i.success {
